@@ -1,0 +1,24 @@
+<script>
+
+/*Рекурсия*/
+function fib(n) {
+  return n<=1 ? n : fib(n-1) + fib(n-2);
+}
+alert(fib(10)); //2
+alert(fib(8)); //21
+alert(fib(40)); //102334155
+
+function fib2(n) {
+	var a=1, b=1;
+	for(var i=3;i<=n;i++) {
+	var c=a+b;
+	a=b;
+	b=c;
+	}
+	return b;
+}
+alert(fib2(3));
+alert(fib2(8));
+alert(fib2(77));
+
+</script>
